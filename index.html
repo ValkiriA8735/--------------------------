@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.html"></script>
+       <title>ДЗ 6</title>
+</head>
+<body>
+    <h1>Генерация слайдов</h1>
+    <div class="imageContainer">
+        <div class="Overlay">
+          <img src="https://picsum.photos/300/200?random=1" alt="" />
+        </div>
+        <div class="Overlay">
+          <img src="https://picsum.photos/seed/picsum/300/200?random=2" alt="" />
+        </div>
+        <div class="Overlay">
+          <img src="https://picsum.photos/300/200?grayscale?random=3" alt="" />
+        </div>
+        <div class="Overlay">
+          <img src="https://picsum.photos/300/200/?blur?random=4" alt="" />
+        </div>
+      </div>
+  
+      <div class="container">
+        <p class="buttonContainer">
+          <button onclick="reloadImage()">reload</button>
+          <button id="removeImage" onclick="removeImage()">remove</button>
+          <button onclick="addImage()">add</button>
+        </p>
+      </div>
+  
+      <!-- подпись автора -->
+      <p class="autor">автор <span>Артеева Валерия</span></p>
+  
+    <!-- подключение файла JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+

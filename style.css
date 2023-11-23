@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    color: white;
+    background: green;
+    text-align: center;
+    margin: 5px;
+  }
+  img {
+    border-radius: 25px;
+    margin: 10px;
+    /* width: 50%; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.5s;
+  }
+  img:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  button {
+    background: green;
+    color: azure;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: background 0.2s;
+    margin: 15px;
+  }
+
+  button:hover {
+    background: red;
+    color: aliceblue;
+  }
+
+  a {
+    color: aliceblue;
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 360px) {
+    img {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    margin: 25px 20px 25px 20px;
+  }
+
+  p.autor {
+    padding: 20px;
+    color: white;
+    background: black;
+  }
+  p span {
+    font-weight: bold;
+  }
+  .active {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active img {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  #removeImage:disabled {
+    background-color: #ccc; /* Изменить цвет фона */
+    color: #888; /* Изменить цвет текста */
+    cursor: not-allowed; /* Изменить указатель мыши на "не разрешено" */
+    border: 1px solid #ccc; /* Изменить границу кнопки */
+    opacity: 0.7; /* Изменить непрозрачность */
+  }
